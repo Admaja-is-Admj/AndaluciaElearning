@@ -8,7 +8,7 @@ if(!isset($_SESSION["login"])){
 
 require 'functions.php';
 
-$mahasiswa=query("SELECT * FROM mahasiswa");
+$mahasiswa=query("SELECT * FROM siswa");
 if(isset($_POST["cari"])){
     $mahasiswa=cari($_POST["keyword"]);
 }
